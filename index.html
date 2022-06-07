@@ -1,24 +1,13 @@
 <!DOCTYPE html>
-<html lang="ukr">
+<html lang="uk">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Портфоліо</title>
+        <link type="Image/x-icon" href="images/web-icon.png" rel="icon">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">  
-        <style>
-            a {
-             color: #f8f8f8; /* Колір звичайного посилання */ 
-             text-decoration: none; /* Забираємо підчеркування */
-            }
-            a:visited {
-             color: #fafafa; 
-            } 
-            a:hover {
-             color: #ffffff; /* Колір посилання після наведення*/ 
-             text-decoration: underline; /* Добавляємо підчеркування */
-            }
-           </style>   
+        
     </head>
         <body>
            <header>
@@ -30,6 +19,7 @@
                               <ul>
                                   <li><a href="#about">Про мене</a></li>
                                   <li><a href="#portfolio">Портфоліо</a></li>
+                                  <li><a href="#practicum">Лабораторні</a></li>
                                   <li><a href="#contacts">Контакти</a></li>
                                   <li class="switch"><a href="#"></a></li>
                               </ul>
@@ -42,12 +32,12 @@
                      <div class="header_body_inner">
                         <div class="left">
                             <div class="title">
-                                Привіт, <br>Я Олександр, <br><span>Студент КЕП</span>
+                                Привіт, <br>Я Олександр, <br><span>Студент ФКЕП</span>
                             </div>
                             <a href="#contacts" class="btn">Зв'язатися зі мною</a>
                         </div>
                         <div class="right">
-                            <img src="images/visuts.png" alt="Поки що без фото)">
+                            <img  src="images/my_photo.jpg" alt="">
                         </div>
                      </div>
                  </div>
@@ -75,7 +65,7 @@
                       <h1>Професійні навички</h1>
                       <p>
                           Захопившись програмуванням я оволодів певними навиками програмування та ознайомився більш детальніше з комп'ютером. На даний момент я володію: </p>
-                          <nav><ul type="square">
+                          <nav class="type_square"><ul>
                           <li>на високому рівні ОПЗ(Excel, Word, Power Point, Accsess);</li>
                           <li> мовами програмування(C/С++, C#, Java,) - вище середнього рівня;</li>
                           <li>верстка сайтів(HTML,CSS,Java) - вище середнього рівня;</li>
@@ -134,7 +124,7 @@
                  <!-- progres HTML/CSS/JavaScript -->
                 <div class="about_text">
                  <p>
-                 HTML/CSS/JAVA
+                 HTML/CSS/JS
                    </p>
                </div>
                    <div class="wrapper4">
@@ -147,28 +137,35 @@
             </div>
      </section>
       <!--Секція практикум-->
-      <section id="practukum">
+      <section id="practicum">
         <div class="container">
             <div class="section_title">
                 Практикум
             </div>
             <div class="about_text">
-             <h1>Список практичних робіт</h1>
-                    <p><a href="lab2.html"  class="btns">Практична № 2	&#9989;</a></p>
-                    <p><a href="lab3_1.html"  class="btns">Практична № 3	&#9989;</a></p>
-                    <p><a href="lab4_1.html"  class="btns">Практична № 4 &#9989;</a></p>
-                    <p><a href="" class="btns">Практична № 5 &#10060;</a></p>
-                
+             <h1>Список лабораторних робіт</h1>
+             <div class="container_practicum">
+                    <p><a href="lab2/lab2.html"  target="_blank" class="btns">Лабораторна № 2	&#9989;</a></p>
+                    <p><a href="lab3/lab3_1.html"  target="_blank" class="btns">Лабораторна № 3	&#9989;</a></p>
+                    <p><a href="lab4/lab4_1.html"  target="_blank" class="btns">Лабораторна № 4 &#9989;</a></p>
+                    <p><a href="lab5/lab5_1.html"  target="_blank" class="btns">Лабораторна № 5 &#9989;</a></p>
+                    <p><a href="lab6/lab6_1.html" target="_blank" class="btns">Лабораторна № 6 &#9989;</a></p>
+                    <p><a href="lab7/lab7_1.html" target="_blank" class="btns">Лабораторна № 7 &#9989;</a></p>
+                    <p><a href="lab8/lab8_3.html" target="_blank" class="btns">Лабораторна № 8 &#9989;</a></p>
+                    <p><a href="pr_1/general.html" target="_blank" class="btns">Практича № 1 &#9989;</a></p>
+                    <p><a href="pr_2/pr_2.html" target="_blank" class="btns">Практича № 2 &#9989;</a></p>
+            
+                </div>
             </div>
         </div>
 
     </section>
      <!--Розклад дня-->
-    <section id="rozklad">
+    <section id="timetable">
         <div class="container">
             <div class="about_text">
              <h3>Розклад на день</h3>
-             <div class="zagolovok">
+             <div class="title">
              <p>Їжа</p>
              <p>Спорт</p>
              <p>Навчання</p>
@@ -283,18 +280,18 @@
                        Контакти
                   </div>
                   <div class="contacts_form">
-                    <form action="">
+                    <form action="form_action">
                         <input type="text" placeholder="Ваше ім'я">
                         <input type="text" placeholder="Телефон">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше повідомлення"></textarea>
-                   <button type="submit">Надіслати</button>
+                        <textarea name="textarea_name" id="text_area" cols="30" rows="10" placeholder="Ваше повідомлення"></textarea>
+                   <button type="submit" class="btn">Надіслати</button>
                     </form>
                   </div>
               </div>
           <footer>
-            <p>&#9993;<a href="mailto: number2look@gmail.com">number2look@gmail.com</a></p>
+            <p>&#9993;<a class="information_me" href="mailto:number2look@gmail.com">number2look@gmail.com</a></p>
             <p>&copy; Copyright 2022</p>
-              <p>&#9742;<a href="tell: +380971427124">+380971427124</a></p>
+              <p>&#9742;<a class="information_me" href="tel:+380971427124">+380971427124</a></p>
               
           </footer>
         </section>
